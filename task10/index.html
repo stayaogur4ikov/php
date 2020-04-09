@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- для responsive сайта -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- для браузера Едж -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tractor-zapchast</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Tractor-zapchast</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">О нас</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Ассортимент
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Трактора</a>
+                  <a class="dropdown-item" href="#">Ходовые части</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Двигатели</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Вперед!</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="slider-section container">
+        <div class="slider">
+          <div class="slide">
+            <div class="slide-wrapper">
+              <div class="slide-pic">
+                <img src="slide1.jpg" width="650" alt="">
+              </div>
+              <div class="slide-text">
+                <h2>T-16</h2>
+                <p>Cамоходное шасси. Модель выпускал Харьковский завод тракторных самоходных шасси.</p>
+                <button class="btn btn-primary">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-wrapper">
+              <div class="slide-pic">
+                <img src="slide2.jpg" width="650" alt="">
+              </div>
+              <div class="slide-text">
+                <h2>MTZ</h2>
+                <p>Марка универсально-пропашных колёсных тракторов, выпускаемых Минским тракторным заводом.</p>
+                <button class="btn btn-primary">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-wrapper">
+              <div class="slide-pic">
+                <img src="slide3.jpg" width="650" alt="">
+              </div>
+              <div class="slide-text">
+                <h2>T-25</h2>
+                <p>Это универсальные колёсные тракторы класса 0,6 с приводом на два задних колеса.</p>
+                <button class="btn btn-primary">Купить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="text-section container">
+        <h1>Покупайте трактора</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt pariatur libero, fugit quod cumque natus
+          nesciunt magnam quas officia dicta omnis in mollitia, iure, qui quaerat possimus sapiente odio eaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, at sed iste perspiciatis maxime nostrum nemo
+          ullam expedita quo similique recusandae porro beatae vero ipsum corporis laudantium? Eveniet, expedita
+          voluptatum?</p>
+      </div>
+      <div class="cards-section container">
+        <div class="row">
+          <div class="card col-4" style="width: 18rem;">
+            <img src="./slide1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">T-16</h5>
+              <p class="card-text">Разработка Т-16 является результатом модернизации самоходного шасси ДСШ-14, проекты разрабатывались в СКБ по тракторным самоходным шасси в г. Харькове.</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Купить</button>
+            </div>
+          </div>
+          <div class="card col-4" style="width: 18rem;">
+            <img src="./slide2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">MTZ</h5>
+              <p class="card-text">В конструкцию новой машины было внесено большое количество изменений. Основными из которых являлись новая обшивка, кабина, и двигатель повышенной мощности Д-240.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Купить</button>
+            </div>
+          </div>
+          <div class="card col-4" style="width: 18rem;">
+            <img src="./slide3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">T-25</h5>
+              <p class="card-text">Т-25А оборудован двухцилиндровым четырёхтактным дизельным двигателем воздушного охлаждения (Д21А), сухим однодисковым постоянно замкнутым сцеплением, механической реверсивной коробкой передач.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-section container">
+        <div class="row justify-content-between">
+          <div class="text col-6">
+            <h1>Заказ техники онлайн</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias aut corporis similique fugit animi
+              dolores ut! Fugit, at vero, temporibus saepe quis velit itaque, cum doloribus sequi ipsam quam!</p>
+          </div>
+          <div class="form">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">Мы ни с кем не делимся Вашими данными</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer container">
+      <div class="d-flex try">
+        <div class="footer-text">
+          <h2>Подписывайтесь!</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Consequatur voluptatum voluptatem at.</p>
+        </div>
+        <div class="footer-form">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+    </footer>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Оформление заказа</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Спасибо за заказ
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Вернуться к покупкам</button>
+          <button type="button" class="btn btn-primary">Продолжить оформление заказа</button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.slider').slick({
+        autoplay: true,
+        arrows: true,
+      });
+    });
+  </script>
+</body>
+
+</html>
