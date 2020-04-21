@@ -1,0 +1,57 @@
+<?php
+
+error_reporting(E_ALL);
+error_reporting(-1);
+ini_set('error_reporting', E_ALL);
+
+class User
+{
+    private $id;
+    private $password;
+    private $email;
+
+    public function __construct($id, $password, $email)
+    {
+        $this->id = $id;
+        $this->password = $password;
+        $this->email = $email;
+    }
+    public function getUserData()
+    {
+        $userData = [
+            'id'       => $this->id,
+            'password' => $this->password
+        ];
+        return  $userData;
+    }
+}
+class myException extends Exception
+{ 
+    public function errorMessage()
+    {
+        $errorMsg = 'Error in ' . $this->getFile()
+            . ' on line ' . $this->getLine() . ': <b>' . $this->getMessage();
+        return $errorMsg;
+    }
+}
+$regular = '/^.{1,8}$/';
+$user = new User('2asdaaf3', 'zxczxczxczxczxc', 'dimfd@gdfdfdfdfdfmail.com');
+
+try {
+
+    $text = '';
+    if (!preg_match($regular, $user->getUserData()['password']) === true) {
+
+        $text .= 'Invalid password ';
+    }
+    if (gettype($user->getUserData()['id']) !== 'integer') {
+        $text .= "Wrong type. ID MUST BE an integer";
+    }
+    if ($text != '') {
+        throw new myException($text);
+    } else {
+        echo '<pre>' . print_r($user->getUserData(), true) . '</pre>';
+    }
+} catch (myException $e) {
+    echo $e->errorMessage();
+}
